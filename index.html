@@ -9,7 +9,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link href="src/style.css"/>
+    <link href="src/styles.css" />
     <script
       src="https://kit.fontawesome.com/4abeea4166.js"
       crossorigin="anonymous"
@@ -17,7 +17,9 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div class="container box">
+      <div class="card text-center">
+        <div class="card-body">
           <h1>Weather forecast</h1>
           <div class="row">
             <div class="col city">
@@ -56,6 +58,9 @@
                   </div>
                 </div>
               </form>
+            </div>
+          </div>
+
           <div class="row px-5">
             <div class="col today1">
               <div class="border border-4 rounded-pill" style="width: 200px">
@@ -81,8 +86,80 @@
               </div>
             </div>
 
+            <div class="col px-1 arrow" id="arrow">
+              <div class="align-self-center">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+
+            <div class="col px-1 tomorrow2">
+              <div class="border border-4 rounded-pill" style="width: 120px">
+                <div class="row-day">Wed,<br />12/01</div>
+                <i class="fas fa-cloud-showers-heavy"></i>
+                <div class="row-temp-range">-3ºC - 12ºC</div>
+              </div>
+            </div>
+
+            <div class="col px-1 arrow" id="arrow">
+              <div class="align-self-center">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+
+            <div class="col px-1 after3">
+              <div class="border border-4 rounded-pill" style="width: 120px">
+                <div class="row-day">Thu,<br />13/01</div>
+                <i class="fas fa-cloud-sun-rain"></i>
+                <div class="row-temp-range">-3ºC - 10ºC</div>
+              </div>
+            </div>
+
+            <div class="col px-1 arrow" id="arrow">
+              <div class="align-self-center">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+
+            <div class="col px-1 after4">
+              <div class="border border-4 rounded-pill" style="width: 120px">
+                <div class="row-day">Fri,<br />14/01</div>
+                <i class="fas fa-cloud-sun"></i>
+                <div class="row-temp-range">-2ºC - 9ºC</div>
+              </div>
+            </div>
+
+            <div class="col px-1 arrow" id="arrow">
+              <div class="align-self-center">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+
+            <div class="col px-1 after5">
+              <div class="border border-4 rounded-pill" style="width: 120px">
+                <div class="row-day">Sat,<br />15/01</div>
+                <i class="far fa-snowflake"></i>
+                <div class="row-temp-range">-3 - 9ºC</div>
+              </div>
+            </div>
+
+            <div class="col px-1 arrow" id="arrow">
+              <div class="align-self-center">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+
+            <div class="col px-1 after6">
+              <div class="border border-4 rounded-pill" style="width: 120px">
+                <div class="row-day">Sun,<br />16/01</div>
+                <i class="fas fa-cloud-rain"></i>
+                <div class="row-temp-range">-2ºC - 10ºC</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="src/script.js">
+    <script src="src/index.js">
       let city =
       prompt("Enter a city");
       alert(city);

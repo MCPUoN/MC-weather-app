@@ -1,0 +1,13 @@
+container {
+  background-color: bisque;
+}
+h1 {
+  color: brown;
+  font-family: "Montserrat", sans-serif;
+}
+.arrow {
+  color: burlywood;
+}
+.rounded-pill {
+  color: black;
+}

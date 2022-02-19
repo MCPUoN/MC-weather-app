@@ -23,7 +23,8 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 #arrow {
-  color: burlywood;
+  color: grey;
+  padding-top: 15px;
 }
 .rounded-pill {
   color: black;

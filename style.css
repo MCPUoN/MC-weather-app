@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-  color: brown;
+  color: rgb(165, 42, 52);
   font-family: "Montserrat", sans-serif;
 }
 #arrow {
@@ -27,5 +27,5 @@ h1 {
   padding-top: 15px;
 }
 .rounded-pill {
-  color: black;
+  color: rgb(226, 174, 97);
 }

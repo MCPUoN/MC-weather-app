@@ -1,31 +1,51 @@
-container {
-  background-color: bisque;
-}
 body {
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: center;
   background-color: #fff;
-  box-sizing: border-box;
-}
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 h1 {
   color: rgb(165, 42, 52);
   font-family: "Montserrat", sans-serif;
 }
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  padding: 40px;
+  color: #878787;
+}
+
+.card {
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 40px 60px;
+  line-height: 1.5;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  color: #878787;
+}
+
 #arrow {
+  display: block;
   color: grey;
   padding-top: 15px;
+  line-height: 1.5;
 }
 .rounded-pill {
-  color: rgb(226, 174, 97);
+  border-radius: 16px;
+  border-style: groove;
+  border-color: azure;
+  display: block;
 }

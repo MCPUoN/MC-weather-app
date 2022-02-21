@@ -38,6 +38,7 @@ h1 {
   color: #878787;
 }
 .cityShown {
+  display: block;
   color: rgb(32, 109, 209);
   border-radius: 2px;
   border-width: 10px;
@@ -54,6 +55,11 @@ h1 {
   padding: 10px;
   width: max-content;
   line-height: 1;
+}
+
+button.citySearch {
+  margin-left: 10px;
+  margin-right: 5px;
 }
 
 #arrow {

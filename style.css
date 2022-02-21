@@ -61,18 +61,20 @@ button.citySearch {
 }
 .today1 {
   box-shadow: 0 30px 50px rgb(65 50 100 / 10%);
-  -moz-box-align: center;
   border: #212529;
-  width: 250px;
+  border-radius: 15px;
+  border-color: #212529;
+  width: 300px;
   background-color: #fff;
-  line-height: 0.5;
+  line-height: 1.5;
 }
 
 #day {
   display: inline-block;
   border: #212529;
-  border-radius: 20px;
-  width: 120px;
+  border-width: 5px;
+  border-radius: 15px;
+  width: 200px;
   background-color: #fff;
 }
 #arrow {

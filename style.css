@@ -10,7 +10,7 @@ body {
 
 h1 {
   line-height: 0.5;
-  color: rgb(165, 42, 52);
+  color: grey;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -31,38 +31,38 @@ h1 {
   display: block;
   text-align: center;
   box-sizing: border-box;
-  padding: 40px 60px;
-  line-height: 1.5;
+  padding: 40px 30px;
+  line-height: 1;
   border-radius: 16px;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
   color: #878787;
 }
 .cityShown {
-  display: block;
-  color: black;
+  color: rgb(32, 109, 209);
   border: 10px;
   border-radius: 2px;
   width: min-content;
   padding: 15px 15px;
-  margin: 40px;
-  line-height: 1;
+  margin: 20px;
 }
 
 .citySearch {
   display: flex;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  width: min-content;
+  line-height: 1;
 }
 
 #arrow {
   display: block;
-  color: grey;
+  color: rgb(155, 83, 197);
   padding-top: 15px;
   line-height: 1.5;
 }
 .rounded-pill {
   border-radius: 16px;
-  border-style: groove;
-  border-color: rgb(185, 197, 197);
+  border-style: dashed;
+  border-color: rgb(35, 12, 87);
   display: block;
 }

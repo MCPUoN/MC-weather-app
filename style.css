@@ -40,18 +40,18 @@ h1 {
 .cityShown {
   display: block;
   color: black;
+  border: 10px;
   border-radius: 2px;
-  border-color: goldenrod;
   width: min-content;
   padding: 15px 15px;
-  margin: auto;
+  margin: 40px;
   line-height: 1;
 }
 
 .citySearch {
-  display: block;
-  width: auto;
-  margin: 10px;
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 #arrow {

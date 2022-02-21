@@ -9,6 +9,7 @@ body {
 }
 
 h1 {
+  line-height: 0.5;
   color: rgb(165, 42, 52);
   font-family: "Montserrat", sans-serif;
 }
@@ -36,6 +37,22 @@ h1 {
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
   color: #878787;
 }
+.cityShown {
+  display: block;
+  color: black;
+  border-radius: 2px;
+  border-color: goldenrod;
+  width: min-content;
+  padding: 15px 15px;
+  margin: auto;
+  line-height: 1;
+}
+
+.citySearch {
+  display: block;
+  width: auto;
+  margin: 10px;
+}
 
 #arrow {
   display: block;
@@ -46,6 +63,6 @@ h1 {
 .rounded-pill {
   border-radius: 16px;
   border-style: groove;
-  border-color: azure;
+  border-color: rgb(185, 197, 197);
   display: block;
 }

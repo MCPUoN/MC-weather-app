@@ -40,6 +40,7 @@ h1 {
   border: rgb(30, 30, 218);
   box-sizing: border-box;
   border-radius: 10px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
   width: min-content;
   padding: 15px 15px;
   line-height: 1;
@@ -59,11 +60,21 @@ button.citySearch {
   margin-right: 15px;
 }
 .today1 {
-  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  box-shadow: 0 30px 50px rgb(65 50 100 / 10%);
+  -moz-box-align: center;
   border: #212529;
-  width: 200px;
+  width: 250px;
+  background-color: #fff;
+  line-height: 0.5;
 }
 
+#day {
+  display: inline-block;
+  border: #212529;
+  border-radius: 20px;
+  width: 120px;
+  background-color: #fff;
+}
 #arrow {
   display: block;
   color: rgb(155, 83, 197);

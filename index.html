@@ -25,44 +25,8 @@
   </head>
   <body>
     <div class="container">
+      <h1>Weather forecast</h1>
       <div class="card">
-        <h1>Weather forecast</h1>
-        <div class="row">
-          <div class="col-3 cityShown">Madrid</div>
-          <div class="col-9 search">
-            <form id="whatCity">
-              <div class="input-group citySearch">
-                <input
-                  type="search"
-                  class="form-control d-inline-block"
-                  placeholder="Enter a city!"
-                  autocomplete="off"
-                  autofocus="on"
-                  id="cityTyped"
-                />
-                <div class="input-group-prepend">
-                  <button
-                    type="submit"
-                    value="search"
-                    id="searchLocBtn"
-                    class="btn btn-outline-primary d-md-inline"
-                  >
-                    Search
-                  </button>
-                  <button
-                    type="click"
-                    id="currLocBtn"
-                    value="current"
-                    class="btn btn-success d-md-inline"
-                  >
-                    Current
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-
         <div class="row px-5 days">
           <div class="col today1">
             <div class="rowMainDay">Tuesday,<br />11/01/2021, 21:00 hrs</div>
@@ -81,6 +45,42 @@
             </div>
             <div class="row-wind">
               <i class="fas fa-wind"></i><span id="wind0">10</span>km/h
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3 cityShown">Madrid</div>
+            <div class="col-9 search">
+              <form id="whatCity">
+                <div class="input-group citySearch">
+                  <input
+                    type="search"
+                    class="form-control d-inline-block"
+                    placeholder="Enter a city!"
+                    autocomplete="off"
+                    autofocus="on"
+                    id="cityTyped"
+                  />
+                  <div class="input-group-prepend">
+                    <button
+                      type="submit"
+                      value="search"
+                      id="searchLocBtn"
+                      class="btn btn-outline-primary d-md-inline"
+                    >
+                      Search
+                    </button>
+                    <button
+                      type="click"
+                      id="currLocBtn"
+                      value="current"
+                      class="btn btn-success d-md-inline"
+                    >
+                      Current
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
 

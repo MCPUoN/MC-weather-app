@@ -39,8 +39,9 @@ h1 {
 }
 .cityShown {
   color: rgb(32, 109, 209);
-  border: 10px;
   border-radius: 2px;
+  border-width: 10px;
+  border: rgb(30, 30, 218);
   width: min-content;
   padding: 15px 15px;
   margin: 20px;
@@ -48,9 +49,10 @@ h1 {
 
 .citySearch {
   display: flex;
-  margin-right: 15px;
-  margin-left: 15px;
-  width: min-content;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  width: max-content;
   line-height: 1;
 }
 

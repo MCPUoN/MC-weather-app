@@ -22,7 +22,7 @@ h1 {
   border-radius: 16px;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
   padding: 40px;
-  background-color: rgb(202, 111, 0);
+  background-color: #fff;
 }
 
 .card {
@@ -43,30 +43,20 @@ h1 {
   border-radius: 10px;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
   padding: 10px 0;
-  width: auto;
   line-height: 1;
   margin-bottom: 10px;
   box-align: left;
-  background-color: honeydew;
+  background-color: ghostwhite;
   flex: 0 0 50%;
-  max-width: 50%;
 }
 
 .citySearch {
   display: flex;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: auto;
   padding: 0, 15px;
   width: 350px;
   line-height: 1;
-  flex: 0 0 50%;
   max-width: 50%;
-  background-color: #878787;
-}
-
-button.citySearch {
-  margin-left: 30px;
-  margin-right: 30px;
 }
 
 .days {
@@ -78,8 +68,8 @@ button.citySearch {
   border: #212529;
   border-style: solid;
   border-radius: 15px;
-  border-width: 5px;
-  border-color: #212529;
+  border-width: 2px;
+  border-color: #9ca0a5;
   width: 300px;
   background-color: #fff;
   line-height: 1.5;
@@ -87,15 +77,17 @@ button.citySearch {
 
 #day {
   display: inline-block;
-  border: #212529;
-  border-style: solid;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 10%);
+  border: #9ca0a5;
+  border-left-style: solid;
+  border-right-style: solid;
   border-width: 1px;
   border-spacing: 0ch;
   border-radius: 20px;
   min-width: 100px;
   background-color: #fff;
   margin: auto;
-  padding: 10px, 10px;
+  line-height: 1.5;
 }
 #arrow {
   display: block;

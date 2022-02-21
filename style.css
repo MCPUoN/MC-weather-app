@@ -41,21 +41,20 @@ h1 {
   border-style: outset;
   border-width: 5px;
   border-radius: 10px;
+  max-width: fit-content;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
   padding: 10px 0;
   line-height: 1;
   margin-bottom: 10px;
-  box-align: left;
   background-color: ghostwhite;
 }
 
 .citySearch {
   display: flex;
-  margin-left: auto;
   padding: 0, 15px;
   width: 350px;
   line-height: 1;
-  max-width: 50%;
+  background-color: ghostwhite;
 }
 
 .days {

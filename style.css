@@ -5,11 +5,11 @@ body {
   line-height: 1;
   color: #212529;
   text-align: center;
-  background-color: rgb(243, 201, 16);
+  background-color: rgb(233, 230, 220);
 }
 
 h1 {
-  line-height: 0.5;
+  line-height: -0.5;
   color: grey;
   font-family: "Montserrat", sans-serif;
 }
@@ -24,6 +24,7 @@ h1 {
   border-radius: 16px;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
   padding: 40px;
+  background-color: bisque;
 }
 
 .card {
@@ -37,19 +38,21 @@ h1 {
 }
 .cityShown {
   color: rgb(32, 109, 209);
-  border: rgb(30, 30, 218);
-  box-sizing: content-box;
+  border: rgb(32, 109, 209);
   border-style: outset;
+  border-width: 5px;
   border-radius: 10px;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
   padding: 10px 10px;
   line-height: 1;
+  margin-bottom: 15px;
+  box-align: left;
 }
 
 .citySearch {
   display: flex;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
   padding: auto;
   width: 350px;
   line-height: 1;
@@ -57,13 +60,19 @@ h1 {
 
 button.citySearch {
   margin-left: 30px;
-  margin-right: 15px;
+  margin-right: 30px;
 }
+
+.days {
+  line-height: 1;
+}
+
 .today1 {
   box-shadow: 0 30px 50px rgb(65 50 100 / 10%);
   border: #212529;
   border-style: solid;
   border-radius: 15px;
+  border-width: 5px;
   border-color: #212529;
   width: 300px;
   background-color: #fff;
@@ -75,19 +84,17 @@ button.citySearch {
   border: #212529;
   border-style: solid;
   border-width: 1px;
+  border-spacing: 0ch;
   border-radius: 20px;
   min-width: 100px;
   background-color: #fff;
   align-content: center;
+  line-height: 1;
 }
 #arrow {
   display: block;
   color: rgb(155, 83, 197);
-  vertical-align: middle;
-}
-.rounded-pill {
-  border-radius: 16px;
-  border-style: dashed;
-  border-color: rgb(35, 12, 87);
-  display: block;
+  align-items: center;
+  padding: 15px 0px;
+  align-content: center;
 }

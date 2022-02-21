@@ -26,131 +26,127 @@
   <body>
     <div class="container">
       <div class="card text-center">
-        <div class="card-body">
-          <h1>Weather forecast</h1>
-          <div class="row">
-            <div class="col city">
-              <div style="width: 300px">
-                <div class="cityShown">Madrid</div>
-              </div>
+        <h1>Weather forecast</h1>
+        <div class="row">
+          <div class="col city">
+            <div style="width: 300px">
+              <div class="cityShown">Madrid</div>
             </div>
-            <div class="col search">
-              <form id="whatCity">
-                <div class="input-group mb-3 citysearch">
-                  <input
-                    type="search"
-                    class="form-control d-inline-block"
-                    placeholder="Are you looking for a different city?"
-                    autocomplete="off"
-                    autofocus="on"
-                    id="cityTyped"
-                  />
-                  <div class="input-group-prepend">
-                    <button
-                      type="submit"
-                      value="search"
-                      id="searchLocBtn"
-                      class="btn btn-outline-primary d-md-inline"
-                    >
-                      Search
-                    </button>
-                    <button
-                      type="click"
-                      id="currLocBtn"
-                      value="current"
-                      class="btn btn-success d-md-inline"
-                    >
-                      Current
-                    </button>
-                  </div>
+          </div>
+          <div class="col search">
+            <form id="whatCity">
+              <div class="input-group mb-3 citysearch">
+                <input
+                  type="search"
+                  class="form-control d-inline-block"
+                  placeholder="Are you looking for a different city?"
+                  autocomplete="off"
+                  autofocus="on"
+                  id="cityTyped"
+                />
+                <div class="input-group-prepend">
+                  <button
+                    type="submit"
+                    value="search"
+                    id="searchLocBtn"
+                    class="btn btn-outline-primary d-md-inline"
+                  >
+                    Search
+                  </button>
+                  <button
+                    type="click"
+                    id="currLocBtn"
+                    value="current"
+                    class="btn btn-success d-md-inline"
+                  >
+                    Current
+                  </button>
                 </div>
-              </form>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="row px-5">
+          <div class="col today1">
+            <div class="border border-4 rounded-pill" style="width: 200px">
+              <div class="rowMainDay">Tuesday,<br />11/01/2021, 21:00 hrs</div>
+              <div class="row-temperature">
+                <span id="temperatureNow">15</span>°C
+              </div>
+              <i class="fas fa-cloud"></i>
+              <div class="row-temp-range">
+                <i class="fas fa-temperature-low"></i
+                ><span id="temp-min0">0</span>ºC
+                <i class="fas fa-temperature-high"></i
+                ><span id="temp-max0">15</span>ºC
+              </div>
+              <div class="row-humidity">
+                <i class="fas fa-smog"></i> <span id="humidity0">69</span>%
+              </div>
+              <div class="row-wind">
+                <i class="fas fa-wind"></i><span id="wind0">10</span>km/h
+              </div>
             </div>
           </div>
 
-          <div class="row px-5">
-            <div class="col today1">
-              <div class="border border-4 rounded-pill" style="width: 200px">
-                <div class="rowMainDay">
-                  Tuesday,<br />11/01/2021, 21:00 hrs
-                </div>
-                <div class="row-temperature">
-                  <span id="temperatureNow">15</span>°C
-                </div>
-                <i class="fas fa-cloud"></i>
-                <div class="row-temp-range">
-                  <i class="fas fa-temperature-low"></i
-                  ><span id="temp-min0">0</span>ºC
-                  <i class="fas fa-temperature-high"></i
-                  ><span id="temp-max0">15</span>ºC
-                </div>
-                <div class="row-humidity">
-                  <i class="fas fa-smog"></i> <span id="humidity0">69</span>%
-                </div>
-                <div class="row-wind">
-                  <i class="fas fa-wind"></i><span id="wind0">10</span>km/h
-                </div>
-              </div>
-            </div>
+          <div class="col px-1 arrow" id="arrow">
+            <i class="fas fa-chevron-right"></i>
+          </div>
 
-            <div class="col px-1 arrow" id="arrow">
-              <i class="fas fa-chevron-right"></i>
+          <div class="col px-1" id="day">
+            <div class="border border-4 rounded-pill" style="width: 120px">
+              <div class="row-day">Wed,<br />12/01</div>
+              <div class="row-temp-range">-3ºC - 12ºC</div>
+              <i class="fas fa-cloud-showers-heavy"></i>
             </div>
+          </div>
 
-            <div class="col px-1" id="day">
-              <div class="border border-4 rounded-pill" style="width: 120px">
-                <div class="row-day">Wed,<br />12/01</div>
-                <div class="row-temp-range">-3ºC - 12ºC</div>
-                <i class="fas fa-cloud-showers-heavy"></i>
-              </div>
+          <div class="col px-1 arrow" id="arrow">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+
+          <div class="col px-1" id="day">
+            <div class="border border-4 rounded-pill" style="width: 120px">
+              <div class="row-day">Thu,<br />13/01</div>
+              <div class="row-temp-range">-3ºC - 10ºC</div>
+              <i class="fas fa-cloud-sun-rain"></i>
             </div>
+          </div>
 
-            <div class="col px-1 arrow" id="arrow">
-              <i class="fas fa-chevron-right"></i>
+          <div class="col px-1 arrow" id="arrow">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+
+          <div class="col px-1" id="day">
+            <div class="border border-4 rounded-pill" style="width: 120px">
+              <div class="row-day">Fri,<br />14/01</div>
+              <div class="row-temp-range">-2ºC - 9ºC</div>
+              <i class="fas fa-cloud-sun"></i>
             </div>
+          </div>
 
-            <div class="col px-1" id="day">
-              <div class="border border-4 rounded-pill" style="width: 120px">
-                <div class="row-day">Thu,<br />13/01</div>
-                <div class="row-temp-range">-3ºC - 10ºC</div>
-                <i class="fas fa-cloud-sun-rain"></i>
-              </div>
+          <div class="col px-1 arrow" id="arrow">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+
+          <div class="col px-1" id="day">
+            <div class="border border-4 rounded-pill" style="width: 120px">
+              <div class="row-day">Sat,<br />15/01</div>
+              <div class="row-temp-range">-3 - 9ºC</div>
+              <i class="far fa-snowflake"></i>
             </div>
+          </div>
 
-            <div class="col px-1 arrow" id="arrow">
-              <i class="fas fa-chevron-right"></i>
-            </div>
+          <div class="col px-1 arrow" id="arrow">
+            <i class="fas fa-chevron-right"></i>
+          </div>
 
-            <div class="col px-1" id="day">
-              <div class="border border-4 rounded-pill" style="width: 120px">
-                <div class="row-day">Fri,<br />14/01</div>
-                <div class="row-temp-range">-2ºC - 9ºC</div>
-                <i class="fas fa-cloud-sun"></i>
-              </div>
-            </div>
-
-            <div class="col px-1 arrow" id="arrow">
-              <i class="fas fa-chevron-right"></i>
-            </div>
-
-            <div class="col px-1" id="day">
-              <div class="border border-4 rounded-pill" style="width: 120px">
-                <div class="row-day">Sat,<br />15/01</div>
-                <div class="row-temp-range">-3 - 9ºC</div>
-                <i class="far fa-snowflake"></i>
-              </div>
-            </div>
-
-            <div class="col px-1 arrow" id="arrow">
-              <i class="fas fa-chevron-right"></i>
-            </div>
-
-            <div class="col px-1" id="day">
-              <div class="border border-4 rounded-pill" style="width: 120px">
-                <div class="row-day">Sun,<br />16/01</div>
-                <div class="row-temp-range">-2ºC - 10ºC</div>
-                <i class="fas fa-cloud-rain"></i>
-              </div>
+          <div class="col px-1" id="day">
+            <div class="border border-4 rounded-pill" style="width: 120px">
+              <div class="row-day">Sun,<br />16/01</div>
+              <div class="row-temp-range">-2ºC - 10ºC</div>
+              <i class="fas fa-cloud-rain"></i>
             </div>
           </div>
         </div>

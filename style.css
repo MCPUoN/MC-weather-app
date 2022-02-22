@@ -61,7 +61,7 @@ h1 {
 
 #searchLocBtn {
   background-color: #fff;
-  margin: auto;
+  gap: 20px;
 }
 
 .days {

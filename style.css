@@ -44,12 +44,12 @@ h1 {
   border-style: outset;
   border-width: 5px;
   border-radius: 10px;
-  max-width: fit-content;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
   padding: 10px 20px;
-  max-width: 40%;
+  max-width: 20%;
   line-height: 1;
   margin-bottom: 10px;
+  margin-left: 20px;
   background-color: ghostwhite;
 }
 

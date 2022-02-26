@@ -26,7 +26,29 @@
   <body>
     <div class="container">
       <h1>Weather forecast</h1>
-      <div class="card">
+      <div class="table">
+        <div class="cell">
+          <div class="today1">
+            <div class="rowMainDay">Tuesday,<br />11/01/2021, 21:00 hrs</div>
+            <div class="row-temperature">
+              <span id="temperatureNow">15</span>°C
+            </div>
+            <i class="fas fa-cloud"></i>
+            <div class="row-temp-range">
+              <i class="fas fa-temperature-low"></i
+              ><span id="temp-min0">0</span>ºC
+              <i class="fas fa-temperature-high"></i
+              ><span id="temp-max0">15</span>ºC
+            </div>
+            <div class="row-humidity">
+              <i class="fas fa-smog"></i> <span id="humidity0">69</span>%
+            </div>
+            <div class="row-wind">
+              <i class="fas fa-wind"></i><span id="wind0">10</span>km/h
+            </div>
+          </div>
+        </div>
+        <div class="cell"></div>
         <div class="row">
           <div class="col-3 cityShown">Madrid</div>
           <div class="col-9 search">
@@ -62,28 +84,7 @@
             </form>
           </div>
         </div>
-
         <div class="row px-5 days">
-          <div class="col today1">
-            <div class="rowMainDay">Tuesday,<br />11/01/2021, 21:00 hrs</div>
-            <div class="row-temperature">
-              <span id="temperatureNow">15</span>°C
-            </div>
-            <i class="fas fa-cloud"></i>
-            <div class="row-temp-range">
-              <i class="fas fa-temperature-low"></i
-              ><span id="temp-min0">0</span>ºC
-              <i class="fas fa-temperature-high"></i
-              ><span id="temp-max0">15</span>ºC
-            </div>
-            <div class="row-humidity">
-              <i class="fas fa-smog"></i> <span id="humidity0">69</span>%
-            </div>
-            <div class="row-wind">
-              <i class="fas fa-wind"></i><span id="wind0">10</span>km/h
-            </div>
-          </div>
-
           <div class="col px-1 arrow" id="arrow">
             <i class="fas fa-chevron-right"></i>
           </div>

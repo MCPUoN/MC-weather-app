@@ -14,8 +14,8 @@ h1 {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
@@ -29,7 +29,7 @@ h1 {
   display: block;
   text-align: center;
   box-sizing: border-box;
-  padding: 40px 30px;
+  padding: 15px 15px;
   line-height: 1;
   border-radius: 16px;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
@@ -43,7 +43,7 @@ h1 {
   border-radius: 10px;
   max-width: fit-content;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
-  padding: 10px 20px;
+  padding: 10px 10px;
   max-width: 40%;
   margin: auto;
   line-height: 1;
@@ -77,7 +77,7 @@ h1 {
   border-color: #9ca0a5;
   width: 300px;
   background-color: #fff;
-  line-height: 2;
+  line-height: 1, 5;
 }
 
 #day {

@@ -80,7 +80,7 @@ h1 {
   width: 300px;
   background-color: #fff;
   line-height: 1.5;
-  flex-basis: auto;
+  flex-basis: content;
 }
 
 #day {

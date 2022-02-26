@@ -29,7 +29,7 @@ h1 {
   display: block;
   text-align: center;
   box-sizing: border-box;
-  padding: 20px 30px;
+  padding: 40px 30px;
   line-height: 1;
   border-radius: 16px;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
@@ -41,11 +41,11 @@ h1 {
   border-style: outset;
   border-width: 5px;
   border-radius: 10px;
+  max-width: fit-content;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
   padding: 10px 20px;
-  max-width: 20%;
-  margin-left: 20px;
-  margin-right: 10px;
+  max-width: 40%;
+  margin: auto;
   line-height: 1;
   margin-bottom: 10px;
   background-color: ghostwhite;
@@ -65,9 +65,7 @@ h1 {
 }
 
 .days {
-  line-height: 1.5;
-  padding-left: 0;
-  padding-right: 0;
+  line-height: 1;
 }
 
 .today1 {
@@ -79,7 +77,7 @@ h1 {
   border-color: #9ca0a5;
   width: 300px;
   background-color: #fff;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 #day {

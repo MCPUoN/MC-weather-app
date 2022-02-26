@@ -53,7 +53,7 @@ h1 {
 
 .citySearch {
   display: flex;
-  padding: 15px;
+  padding: 0, 15px;
   max-width: 60%;
   width: 350px;
   line-height: 1;

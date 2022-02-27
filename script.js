@@ -80,7 +80,6 @@ function inputCity(event) {
   let city = document.querySelector("#cityTyped").value;
   cityShown.innerHTML = `${city}`;
   searchInput(city);
-  document.querySelector("#cityShown").innerHTML = "#cityTyped";
 }
 
 //  = document.querySelector("#cityShown");

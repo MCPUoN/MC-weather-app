@@ -98,6 +98,5 @@ function currLocSearch(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(showPosition);
 }
-
 let currentLocButton = document.querySelector(".currLocBtn");
 currLocBtn.addEventListener("click", currLocSearch);

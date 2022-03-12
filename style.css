@@ -38,7 +38,7 @@ h1 {
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
   background-color: beige;
 }
-.cityShown {
+#cityShown {
   color: rgb(32, 109, 209);
   border: rgb(32, 109, 209);
   border-style: outset;

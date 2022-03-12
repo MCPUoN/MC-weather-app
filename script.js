@@ -60,12 +60,11 @@ function showTemp(response) {
   );
   document.querySelector("#humidity0").innerHTML = response.data.main.humidity;
   document.querySelector("weatherIconNow");
-  weatherIconNowElement.setAttribute(
+  weatherIconNow.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  console.log(response);
-  console.log(response.data.name);
+  weatherIconNow.setAttribute("alt", response.data.weather[0].icon);
 }
 
 // info based on city search

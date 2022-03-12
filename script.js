@@ -45,7 +45,7 @@ function capatilizeFirstLetter(str) {
 //weather today
 
 function showTemp(response) {
-  document.querySelector("#cityTyped").innerHTML = response.data.name;
+  document.querySelector("#cityShown").innerHTML = response.data.name;
   document.querySelector("#temperatureNow").innerHTML = Math.round(
     response.data.main.temp
   );

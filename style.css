@@ -81,6 +81,8 @@ h1 {
   background-color: #fff;
   line-height: 1.5;
   flex-basis: content;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #day {

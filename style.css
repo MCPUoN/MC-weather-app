@@ -6,6 +6,7 @@ body {
   color: #212529;
   text-align: center;
   background-color: #fff;
+  vertical-align: middle;
 }
 
 h1 {
@@ -84,8 +85,6 @@ h1 {
   flex-basis: content;
   padding-top: 20px;
   padding-bottom: 20px;
-  align-content: center;
-  vertical-align: middle;
   height: 300px;
 }
 

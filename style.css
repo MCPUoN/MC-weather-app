@@ -66,6 +66,10 @@ h1 {
   gap: 20px;
 }
 
+.searchingCity {
+  align-items: center;
+}
+
 .days {
   line-height: 1;
 }

@@ -103,9 +103,10 @@ h1 {
   line-height: 1.5;
   align-content: center;
   vertical-align: middle;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 #arrow {
-  display: block;
   color: rgb(155, 83, 197);
   padding: 15px 0px;
   margin: auto;

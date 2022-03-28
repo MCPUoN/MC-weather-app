@@ -81,8 +81,10 @@ h1 {
   background-color: #fff;
   line-height: 1.5;
   flex-basis: content;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-content: center;
+  vertical-align: middle;
   height: 300px;
 }
 
@@ -99,10 +101,14 @@ h1 {
   background-color: #fff;
   margin: auto;
   line-height: 1.5;
+  align-content: center;
+  vertical-align: middle;
 }
 #arrow {
   display: block;
   color: rgb(155, 83, 197);
   padding: 15px 0px;
   margin: auto;
+  align-content: center;
+  vertical-align: middle;
 }

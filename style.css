@@ -26,7 +26,6 @@ h1 {
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
   padding: 40px;
   background-color: #fff;
-  vertical-align: middle;
 }
 
 .card {
@@ -86,6 +85,7 @@ h1 {
   padding-top: 20px;
   padding-bottom: 20px;
   height: 300px;
+  vertical-align: middle;
 }
 
 #day {

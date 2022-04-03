@@ -45,15 +45,20 @@ function capatilizeFirstLetter(str) {
 function displayDay() {
   let dayElement = document.querySelector("#day");
   dayElement.innerHTML = `
-            <div class="col px-1">
-              <div class="row-day">Wed,<br />12/01</div>
-              <div class="row-temp-range">-3ºC - 12ºC</div>
+            <div class="row">
+              <div class="col-2">
+              <div class="forecastDates"
+              Wed,<br />12/01</div> </div>
+              <div class="span-temp-range">
+              <span class="temp-range-min">-3ºC</span><span class="temp-range-max"> - 12ºC</span>
+              </div>
               <i class="fas fa-cloud-showers-heavy"></i>
-            </div>
-
-            <div class="col px-1 arrow" id="arrow">
+            <div class="row px-1 arrow" id="arrow">
               <i class="fas fa-chevron-right"></i>
             </div>
+              </div>
+
+
 `;
 }
 

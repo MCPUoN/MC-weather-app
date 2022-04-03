@@ -55,7 +55,7 @@ function displayDay() {
               </div>
               <i class="fas fa-cloud-showers-heavy"></i>
             </div>
-              <div class="row px-1 arrow" id="arrow">
+              <div class="col px-1 arrow" id="arrow">
               <i class="fas fa-chevron-right"></i>
             </div>
               </div>

@@ -42,26 +42,29 @@ function capatilizeFirstLetter(str) {
   return str[0].toUpperCase() + str.slice(1);
 }
 
-function displayDay() {
-  let dayElement = document.querySelector("#day");
-  dayElement.innerHTML = `
-            <div class="row">
-              <div class="col-2">
-              <div class="forecastDates">
-              Wed,<br />12/01
-              </div>          
-              <div class="temp-range">
-              <span class="temp-range-min">-3ºC</span><span class="temp-range-max"> - 12ºC</span>
-              </div>
-              <i class="fas fa-cloud-showers-heavy"></i>
-            </div>
-              <div class="col px-1 arrow" id="arrow">
-              <i class="fas fa-chevron-right"></i>
-            </div>
-              </div>
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
 
-
-`;
+  let forecastHTML = `<div class="row">`;
+  forecastHTML =
+    forecastHTML +
+    `
+    <div class="col-2">
+      <div class="forecastDates">
+        Wed,<br />12/01
+      </div>          
+      <div class="temp-range">
+        <span class="temp-range-min">-3ºC</span><span class="temp-range-max"> - 12ºC</span>
+      </div>
+      <img id="weatherIconNext" alt="Clear" src="" />
+      <i class="fas fa-cloud-showers-heavy"></i>
+    </div>
+    <div class="col px-1 arrow" id="arrow">
+      <i class="fas fa-chevron-right"></i>
+    </div>
+  `;
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 //weather today

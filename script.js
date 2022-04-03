@@ -45,7 +45,7 @@ function capatilizeFirstLetter(str) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div class="row">`;
+  let forecastHTML = `<div class="row forecastDays">`;
   forecastHTML =
     forecastHTML +
     `
@@ -58,10 +58,11 @@ function displayForecast() {
       </div>
       <img id="weatherIconNext" alt="Clear" src="" />
       <i class="fas fa-cloud-showers-heavy"></i>
+      <div class="col px-1 arrow" id="arrow">
+        <i class="fas fa-chevron-right"></i>
+      </div>
     </div>
-    <div class="col px-1 arrow" id="arrow">
-      <i class="fas fa-chevron-right"></i>
-    </div>
+
   `;
   forecastHTML =
     forecastHTML +
@@ -75,9 +76,9 @@ function displayForecast() {
       </div>
       <img id="weatherIconNext" alt="Clear" src="" />
       <i class="fas fa-cloud-showers-heavy"></i>
-    </div>
-    <div class="col px-1 arrow" id="arrow">
-      <i class="fas fa-chevron-right"></i>
+      <div class="col px-1 arrow" id="arrow">
+        <i class="fas fa-chevron-right"></i>
+      </div>
     </div>
   `;
   forecastHTML = forecastHTML + `</div>`;

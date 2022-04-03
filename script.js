@@ -47,13 +47,15 @@ function displayDay() {
   dayElement.innerHTML = `
             <div class="row">
               <div class="col-2">
-              <div class="forecastDates"
-              Wed,<br />12/01</div> </div>
-              <div class="span-temp-range">
+              <div class="forecastDates">
+              Wed,<br />12/01
+              </div>          
+              <div class="temp-range">
               <span class="temp-range-min">-3ºC</span><span class="temp-range-max"> - 12ºC</span>
               </div>
               <i class="fas fa-cloud-showers-heavy"></i>
-            <div class="row px-1 arrow" id="arrow">
+            </div>
+              <div class="row px-1 arrow" id="arrow">
               <i class="fas fa-chevron-right"></i>
             </div>
               </div>

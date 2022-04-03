@@ -45,7 +45,7 @@ function capatilizeFirstLetter(str) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div class="row forecastDays">`;
+  let forecastHTML = `<div class="row">`;
   forecastHTML =
     forecastHTML +
     `

@@ -42,6 +42,21 @@ function capatilizeFirstLetter(str) {
   return str[0].toUpperCase() + str.slice(1);
 }
 
+function displayDay() {
+  let dayElement = document.querySelector("#day");
+  dayElement.innerHTML = `
+            <div class="col px-1">
+              <div class="row-day">Wed,<br />12/01</div>
+              <div class="row-temp-range">-3ºC - 12ºC</div>
+              <i class="fas fa-cloud-showers-heavy"></i>
+            </div>
+
+            <div class="col px-1 arrow" id="arrow">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+`;
+}
+
 //weather today
 
 function showTemp(response) {
@@ -66,6 +81,10 @@ function showTemp(response) {
   );
   weatherIconNow.setAttribute("alt", response.data.weather[0].icon);
 }
+
+//displaying days
+
+displayDay();
 
 // info based on city search
 function searchInput(city) {

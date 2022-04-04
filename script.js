@@ -42,7 +42,8 @@ function capatilizeFirstLetter(str) {
   return str[0].toUpperCase() + str.slice(1);
 }
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
@@ -71,7 +72,14 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
-//weather today
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "4cca19136987fd45a7562c340065ee08";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+//weather today+forecast weather
 
 function showTemp(response) {
   document.querySelector("#cityShown").innerHTML = response.data.name;
@@ -94,11 +102,10 @@ function showTemp(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   weatherIconNow.setAttribute("alt", response.data.weather[0].icon);
+
+  //forecast weather
+  getForecast(response.data.coord);
 }
-
-//displaying days
-
-displayForecast();
 
 // info based on city search
 function searchInput(city) {

@@ -44,22 +44,24 @@ function capatilizeFirstLetter(str) {
 
 function displayForecast(response) {
   console.log(response.data.daily);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  let days = ["Wed", "Thu", "Fri", "Sat", "Sun"];
-  days.forEach(function (day) {
+
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `
     <div class="col-2">
       <div class="forecastDates">
-        ${day},<br />12/01
+        ${forecastDay.dt},<br />12/01
       </div>          
       <div class="temp-range">
-        <span class="temp-range-min">-3ºC</span><span class="temp-range-max"> - 12ºC</span>
+        <span class="temp-range-min">${forecastDay.temp.min}ºC</span><span class="temp-range-max"> - ${forecastDay.temp.max}ºC</span>
       </div>
-      <img id="weatherIconNext" alt="Clear" src="" />
+      <img id="weatherIconNext" alt="Clear" src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
+      />
       <i class="fas fa-cloud-showers-heavy"></i>
       <div class="col px-1 arrow" id="arrow">
         <i class="fas fa-chevron-right"></i>

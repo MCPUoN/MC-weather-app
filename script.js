@@ -61,8 +61,8 @@ function displayForecast(response) {
         <span class="temp-range-min">${forecastDay.temp.min}ºC</span><span class="temp-range-max"> - ${forecastDay.temp.max}ºC</span>
       </div>
       <img id="weatherIconNext" alt="Clear" src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
+      width="30"
       />
-      <i class="fas fa-cloud-showers-heavy"></i>
       <div class="col px-1 arrow" id="arrow">
         <i class="fas fa-chevron-right"></i>
       </div>

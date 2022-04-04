@@ -46,12 +46,14 @@ function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  forecastHTML =
-    forecastHTML +
-    `
+  let days = ["Wed", "Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
     <div class="col-2">
       <div class="forecastDates">
-        Wed,<br />12/01
+        ${day},<br />12/01
       </div>          
       <div class="temp-range">
         <span class="temp-range-min">-3ºC</span><span class="temp-range-max"> - 12ºC</span>
@@ -64,9 +66,9 @@ function displayForecast() {
     </div>
 
   `;
-  forecastHTML =
-    forecastHTML +
-    `
+    forecastHTML =
+      forecastHTML +
+      `
     <div class="col-2">
       <div class="forecastDates">
         Wed,<br />12/01
@@ -81,6 +83,7 @@ function displayForecast() {
       </div>
     </div>
   `;
+  });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }

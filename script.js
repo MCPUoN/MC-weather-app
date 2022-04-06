@@ -78,7 +78,7 @@ function displayForecast(response) {
         `
     <div class="col-2">
       <div class="forecastDates">
-        ${formatDay(forecastDay.dt)},<br />${forecastDay.Date}
+        ${formatDays(forecastDay.dt)}
       </div>          
       <div class="temp-range">
         <span class="temp-range-min">${Math.round(
@@ -96,7 +96,6 @@ function displayForecast(response) {
         <i class="fas fa-chevron-right"></i>
       </div>
     </div>
-
   `;
     }
   });

@@ -44,7 +44,7 @@ function capatilizeFirstLetter(str) {
 
 function formatDay(timestamp) {
   let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-  let month = [
+  let months = [
     "Jan",
     "Feb",
     "Mar",
@@ -60,8 +60,8 @@ function formatDay(timestamp) {
   ];
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
-  let month = date.getMonth();
-  let formatDay = `${days} <br /> ${day}/${month}`;
+  let months = date.getMonth();
+  let formatDay = `${days} <br /> ${day}/${months}`;
   return formatDay[day];
 }
 

@@ -61,7 +61,7 @@ function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
   let month = months[timestamp.getMonth()];
-  let formatDay = `${days} <br /> ${day}/${month}`;
+  let formatDay = `${days(day)} <br /> ${day}/${month}`;
   return formatDay;
 }
 

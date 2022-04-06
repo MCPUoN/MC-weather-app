@@ -43,27 +43,11 @@ function capatilizeFirstLetter(str) {
 }
 
 function formatDay(timestamp) {
-  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-  let months = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
-  let dayWeek = days[date.getDay(timestamp * 1000)];
-  let month = months[timestamp.getMonth()];
-  let formatDay = `${dayWeek} <br /> ${day}/${month}`;
-  return formatDay;
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+  return days[day];
 }
 
 function displayForecast(response) {

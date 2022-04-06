@@ -61,8 +61,8 @@ function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
   let month = date.getMonth();
-  let formatDays = `${days}, <br /> ${day}/${month}`;
-  return formatDays[day];
+  let formatDay = `${days} <br /> ${day}/${month}`;
+  return formatDay[day];
 }
 
 function displayForecast(response) {
@@ -78,7 +78,7 @@ function displayForecast(response) {
         `
     <div class="col-2">
       <div class="forecastDates">
-        ${formatDays(forecastDay.dt)}
+        ${formatDay(forecastDay.dt)}
       </div>          
       <div class="temp-range">
         <span class="temp-range-min">${Math.round(

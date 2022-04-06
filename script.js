@@ -60,8 +60,8 @@ function formatDay(timestamp) {
   ];
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
-  let monthforecast = date.getMonth();
-  let formatDay = `${days} <br /> ${day}/${monthforecast}`;
+  let weekmonthforecast = date.getMonth();
+  let formatDay = `${days} <br /> ${day}/${weekmonthforecast}`;
   return formatDay[day];
 }
 

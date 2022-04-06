@@ -42,14 +42,20 @@ function capatilizeFirstLetter(str) {
   return str[0].toUpperCase() + str.slice(1);
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  return days[day];
+}
+
 function displayForecast(response) {
   console.log(response.data.daily);
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-
-  forecast.forEach(function (forecastDay) {
+  forecast.forEach(function (forecastDay, index) {
     forecastHTML =
       forecastHTML +
       `
@@ -61,7 +67,7 @@ function displayForecast(response) {
         <span class="temp-range-min">${forecastDay.temp.min}ºC</span><span class="temp-range-max"> - ${forecastDay.temp.max}ºC</span>
       </div>
       <img id="weatherIconNext" alt="Clear" src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
-      width="30"
+      width="40"
       />
       <div class="col px-1 arrow" id="arrow">
         <i class="fas fa-chevron-right"></i>

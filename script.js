@@ -55,19 +55,25 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  forecast.forEach(function (forecastDay) {
+  forecast.forEach(function (forecastDay, index) {
     forecastHTML =
       forecastHTML +
       `
     <div class="col-2">
       <div class="forecastDates">
-        ${forecastDay.dt},<br />12/01
+        ${forecastDay.dt},<br />${forecastDay.Date}
       </div>          
       <div class="temp-range">
-        <span class="temp-range-min">${forecastDay.temp.min}ºC</span><span class="temp-range-max"> - ${forecastDay.temp.max}ºC</span>
+        <span class="temp-range-min">${Math.round(
+          forecastDay.temp.min
+        )}ºC</span><span class="temp-range-max"> - ${Math.round(
+        forecastDay.temp.max
+      )}ºC</span>
       </div>
-      <img id="weatherIconNext" alt="Clear" src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
-      width="40"
+      <img id="weatherIconNext" alt="Clear" src="http://openweathermap.org/img/wn/${
+        forecastDay.weather[0].icon
+      }@2x.png"
+      width="42"
       />
       <div class="col px-1 arrow" id="arrow">
         <i class="fas fa-chevron-right"></i>

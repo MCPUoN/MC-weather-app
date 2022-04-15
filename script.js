@@ -77,9 +77,7 @@ function displayForecast(response) {
       }@2x.png"
       width="42"
       />
-      <div class="col px-1 arrow" id="arrow">
-        <i class="fas fa-chevron-right"></i>
-      </div>
+
     </div>
   `;
     }

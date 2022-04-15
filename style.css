@@ -111,6 +111,7 @@ h1 {
   padding-bottom: 10px;
 }
 #arrow {
+  display: inline-block;
   color: rgb(155, 83, 197);
   padding: 15px 0px;
   margin: auto;

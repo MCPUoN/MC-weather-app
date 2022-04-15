@@ -160,3 +160,5 @@ function currLocSearch(event) {
 }
 let currentLocButton = document.querySelector(".currLocBtn");
 currLocBtn.addEventListener("click", currLocSearch);
+
+searchInput("Madrid");

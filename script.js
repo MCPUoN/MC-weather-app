@@ -30,7 +30,13 @@ function formatDate(date) {
   let monthNow = months[date.getMonth()];
   let yearNow = date.getFullYear();
   let hoursNow = date.getHours();
+  if (hoursNow < 10) {
+    hoursNow = "0" + hoursNow;
+  }
   let minutesNow = date.getMinutes();
+  if (minutesNow < 10) {
+    minutesNow = "0" + minutesNow;
+  }
   let formatDate = `${dayNow},<br />${dateNow} ${monthNow} ${yearNow}, ${hoursNow}:${minutesNow} hrs`;
   return formatDate;
 }

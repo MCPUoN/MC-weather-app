@@ -77,7 +77,6 @@ function displayForecast(response) {
       }@2x.png"
       width="42"
       />
-
     </div>
   `;
     }

@@ -86,6 +86,7 @@ h1 {
   background-color: #fff;
   line-height: 1.5;
   flex-basis: content;
+  margin: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   height: 300px;
@@ -103,7 +104,7 @@ h1 {
   border-radius: 20px;
   min-width: 100px;
   background-color: #fff;
-  margin: auto;
+  margin: auto, 15px;
   line-height: 1.5;
   align-content: center;
   vertical-align: middle;
